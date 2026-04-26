@@ -1,0 +1,636 @@
+:root {
+      --yellow:  #FCD12A;
+      --teal:    #0A9BAB;
+      --teal2:   #077A87;
+      --pink:    #E91E8C;
+      --dark:    #111111;
+      --white:   #FFFFFF;
+      --grey:    #555555;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--yellow);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    /* ─── LOGO CLOUD (teal rounded top shape) ─── */
+    .logo-cloud {
+      display: inline-block;
+      background: var(--teal);
+      border-radius: 50% 50% 12px 12px / 60% 60% 12px 12px;
+      padding: 10px 22px 8px;
+      position: relative;
+    }
+    .logo-cloud .le-petit {
+      display: block;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 0.55em;
+      color: var(--white);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 1;
+      text-align: center;
+    }
+    .logo-cloud .champ {
+      display: block;
+      font-family: 'Anton', sans-serif;
+      font-size: 1em;
+      color: var(--white);
+      letter-spacing: 2px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    /* ─── NAV ──────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 52px;
+      background: rgba(10, 10, 10, 0.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--teal);
+    }
+    .nav-logo-wrap { font-size: 1.8rem; text-decoration: none; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a {
+      text-decoration: none; color: var(--white);
+      font-weight: 800; font-size: 0.82rem;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--yellow); }
+    .nav-links .btn-ticket {
+      background: var(--pink); color: var(--white);
+      padding: 9px 22px; border-radius: 4px;
+      letter-spacing: 1px;
+      transition: opacity .2s;
+    }
+    .nav-links .btn-ticket:hover { opacity: 0.50; color: var(--white); }
+
+    /* ─── HERO (composition from img 1) ──────── */
+    #hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.75) 1500%),
+        url(PhotoHero2.jpg) center/cover no-repeat;
+      display: flex; align-items: center; justify-content: flex-end;
+      padding: 0 8% 0 0;
+      position: relative;
+    }
+    /* Teal wave décor left (like img 13/14) */
+    .hero-deco-left {
+      position: absolute; left: 0; bottom: 0; top: 0;
+      width: 12px;
+      background: var(--teal);
+    }
+    .hero-deco-left::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: repeating-linear-gradient(
+        180deg,
+        var(--teal) 0px, var(--teal) 12px,
+        var(--teal2) 12px, var(--teal2) 24px
+      );
+    }
+
+    .hero-card {
+      background: var(--yellow);
+      border: 4px solid var(--dark);
+      border-radius: 4px;
+      padding: 44px 52px;
+      max-width: 480px;
+      position: flex; flex-direction:left; align-items: left;
+    }
+    .hero-edition-tag {
+      display: inline-block;
+      background: var(--teal); color: var(--white);
+      font-family: 'Anton', sans-serif;
+      font-size: 0.9rem; letter-spacing: 3px;
+      padding: 5px 16px; margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(3.5rem, 6vw, 5.5rem);
+      color: var(--dark);
+      line-height: 0.9;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+    .hero-title .line2 { color: var(--teal); }
+    .hero-dates {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--dark);
+      letter-spacing: 3px;
+      border-top: 3px solid var(--dark);
+      border-bottom: 3px solid var(--dark);
+      padding: 10px 0;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .hero-desc {
+      font-size: 0.9rem; color: var(--grey);
+      line-height: 1.7; margin-bottom: 28px;
+    }
+    .btn-hero {
+      display: inline-block;
+      background: var(--dark); color: var(--yellow);
+      font-family: 'Anton', sans-serif;
+      font-size: 1rem; letter-spacing: 3px;
+      text-decoration: none; padding: 14px 36px;
+      transition: background .2s;
+    }
+    .btn-hero:hover { background: var(--teal); color: var(--white); }
+
+    /* Tulip decorator */
+    .tulip { color: var(--pink); font-size: 1em; }
+
+    /* ─── SECTIONS ─────────────────────────────── */
+    section { padding: 90px 52px; }
+
+    /* Section title style matching img 11/12 */
+    .section-title-wrap { text-align: center; margin-bottom: 56px; }
+    .section-title {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      display: inline-block;
+      color: var(--dark);
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      height: 4px; background: var(--dark);
+      margin-top: 6px;
+    }
+    .section-title.on-dark { color: var(--yellow); }
+    .section-title.on-dark::after { background: var(--yellow); }
+    .section-title.on-teal { color: var(--white); }
+    .section-title.on-teal::after { background: var(--white); }
+    .tulip-deco {
+      display: flex; align-items: center; justify-content: center;
+      gap: 18px;
+    }
+    .tulip-deco .tulip { font-size: 1.3rem; }
+
+    /* ─── PROGRAMME ────────────────────────────── */
+    #programme { background: var(--dark); }
+
+    .prog-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+      max-width: 880px; margin: 0 auto;
+    }
+    .prog-day {
+      background: var(--yellow);
+      border: 3px solid var(--yellow);
+      border-radius: 2px; overflow: hidden;
+    }
+    .prog-day-header {
+      background: var(--teal); color: var(--white);
+      text-align: center; padding: 14px 20px;
+      font-family: 'Anton', sans-serif;
+      font-size: 1.2rem; letter-spacing: 3px;
+    }
+    .prog-day:nth-child(2) .prog-day-header { background: var(--pink); }
+    .prog-slot {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 13px 20px;
+      border-bottom: 2px solid rgba(0,0,0,0.08);
+    }
+    .prog-slot:last-child { border-bottom: none; }
+    .prog-slot:hover { background: rgba(0,0,0,0.04); }
+    .prog-artist { font-weight: 800; font-size: 0.95rem; color: var(--dark); }
+    .prog-genre { font-size: 0.72rem; color: var(--grey); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    /* ─── PROG SLOT MYSTÈRE ─── */
+    .prog-slot.mystery-slot {
+      background: repeating-linear-gradient(45deg,#1a1a1a 0px,#1a1a1a 8px,#222 8px,#222 16px);
+      opacity: 0.85;
+    }
+    .prog-slot.mystery-slot .prog-artist { color: var(--teal); letter-spacing: 2px; }
+    .prog-slot.mystery-slot .prog-genre  { color: var(--teal); opacity: 0.7; }
+    .prog-slot.mystery-slot .prog-time   { color: var(--yellow); }
+    .prog-slot.mystery-slot .prog-mini-cd {
+      display: flex; gap: 4px; margin-top: 4px;
+    }
+    .prog-mini-block {
+      background: var(--teal); color: var(--white);
+      border-radius: 2px; padding: 2px 5px; text-align: center; min-width: 28px;
+    }
+    .prog-mini-num { font-family:'Anton',sans-serif; font-size:0.7rem; line-height:1; display:block; }
+    .prog-mini-lbl { font-size:0.42rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; opacity:.8; }
+
+    .prog-time {
+      font-family: 'Anton', sans-serif;
+      font-size: 1rem; color: var(--teal2);
+      letter-spacing: 1px; margin-left: 12px; flex-shrink: 0;
+    }
+
+    /* ─── ARTISTES ─────────────────────────────── */
+    #artistes { background: var(--yellow); }
+
+    .artists-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px; max-width: 1100px; margin: 0 auto;
+    }
+    /* Polaroid style (like img 13/14) */
+    .artist-card {
+      background: var(--white);
+      border: 3px solid var(--dark);
+      padding: 10px 10px 22px;
+      box-shadow: 5px 5px 0 var(--dark);
+      transition: transform .2s, box-shadow .2s;
+      cursor: pointer;
+      transform: rotate(-1deg);
+    }
+    .artist-card:nth-child(even) { transform: rotate(1deg); }
+    .artist-card:hover {
+      transform: rotate(0deg) translateY(-6px);
+      box-shadow: 8px 8px 0 var(--dark);
+      z-index: 2; position: relative;
+    }
+    .artist-img {
+      width: 100%; aspect-ratio: 1/1;
+      background: linear-gradient(135deg,  0%,  100%);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Anton', sans-serif; font-size: 4rem;
+      color: rgba(255,255,255,0.25); overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .artist-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .artist-name {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.15rem; letter-spacing: 1px;
+      color: var(--dark); text-align: center;
+      text-transform: uppercase;
+    }
+    .artist-genre {
+      font-size: 0.72rem; font-weight: 700;
+      color: var(--grey); text-transform: uppercase;
+      letter-spacing: 2px; text-align: center; margin-top: 3px;
+    }
+    .artist-day {
+      display: block; text-align: center; margin-top: 6px;
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--teal2);
+    }
+    .artist-day.sat { color: var(--pink); }
+    /* ─── MYSTERY CARD ─── */
+    .artist-card.mystery {
+      background: var(--dark);
+      border-color: var(--teal);
+      box-shadow: 5px 5px 0 var(--teal);
+      cursor: default;
+    }
+    .artist-card.mystery:hover { transform: rotate(-1deg); box-shadow: 5px 5px 0 var(--teal); }
+    .artist-card.mystery:nth-child(even):hover { transform: rotate(1deg); }
+    .mystery-img {
+      width: 100%; aspect-ratio: 1/1;
+      background: repeating-linear-gradient(45deg,#1a1a1a 0px,#1a1a1a 10px,#222 10px,#222 20px);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      margin-bottom: 10px; gap: 6px;
+    }
+    .mystery-lock { font-size: 2.4rem; }
+    .mystery-date-label { font-family:'Anton',sans-serif; font-size:.6rem; letter-spacing:3px; color:var(--teal); text-transform:uppercase; }
+    .mystery-reveal-date { font-family:'Anton',sans-serif; font-size:.85rem; color:var(--yellow); letter-spacing:2px; }
+    .artist-card.mystery .artist-name { color: var(--teal); }
+    .mystery-countdown { display:flex; justify-content:center; gap:6px; margin-top:8px; flex-wrap:wrap; }
+    .cd-block { background:var(--teal); color:var(--white); border-radius:3px; padding:4px 7px; text-align:center; min-width:36px; }
+    .cd-num { font-family:'Anton',sans-serif; font-size:1rem; line-height:1; display:block; }
+    .cd-label { font-size:.5rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; opacity:.8; }
+
+    /* ─── BANDEAU PROCHAINE ANNONCE ─── */
+    .next-banner {
+      background: var(--dark); border: 3px solid var(--teal);
+      box-shadow: 5px 5px 0 var(--teal);
+      padding: 22px 32px; max-width: 680px;
+      margin: 0 auto 48px; text-align: center;
+    }
+    .nab-eyebrow { font-size:.72rem; font-weight:800; letter-spacing:4px; text-transform:uppercase; color:var(--teal); margin-bottom:6px; }
+    .nab-title { font-family:'Anton',sans-serif; font-size:1.4rem; color:var(--yellow); letter-spacing:3px; margin-bottom:14px; }
+    .nab-cd { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+    .nab-block { background:var(--teal); color:var(--white); border-radius:4px; padding:10px 16px; min-width:64px; text-align:center; }
+    .nab-num { font-family:'Anton',sans-serif; font-size:2rem; line-height:1; display:block; }
+    .nab-lbl { font-size:.62rem; font-weight:800; letter-spacing:2px; text-transform:uppercase; opacity:.85; }
+
+
+    /* ─── LOCALISATION ─────────────────────────── */
+    #localisation { background: var(--teal); }
+
+    .loc-wrapper {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 44px;
+      max-width: 1000px; margin: 0 auto; align-items: start;
+    }
+    .loc-map {
+      background: var(--white);
+      border: 3px solid var(--dark);
+      height: 380px; overflow: hidden;
+      box-shadow: 6px 6px 0 var(--dark);
+    }
+    .loc-map iframe { width: 100%; height: 100%; border: none; }
+    .loc-info-block { color: var(--white); }
+    .loc-info-block h3 {
+      font-family: 'Anton', sans-serif; font-size: 1.8rem;
+      letter-spacing: 2px; color: var(--yellow);
+      border-bottom: 3px solid var(--yellow);
+      padding-bottom: 8px; margin-bottom: 24px;
+    }
+    .loc-row {
+      display: flex; gap: 14px; align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .loc-badge {
+      background: var(--dark); color: var(--yellow);
+      font-family: 'Anton', sans-serif;
+      font-size: 0.7rem; letter-spacing: 2px;
+      padding: 4px 10px; flex-shrink: 0; margin-top: 2px;
+    }
+    .loc-row p { font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.6; }
+
+    /* ─── NOURRITURE ───────────────────────────── */
+    #nourriture { background: var(--yellow); }
+
+    .food-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 20px; max-width: 1000px; margin: 0 auto;
+    }
+    .food-card {
+      background: var(--white);
+      border: 3px solid var(--dark);
+      padding: 26px 18px; text-align: center;
+      box-shadow: 4px 4px 0 var(--dark);
+      transition: transform .15s;
+    }
+    .food-card:hover { transform: translateY(-4px); }
+    .food-emoji { font-size: 2.4rem; display: block; margin-bottom: 10px; }
+    .food-card h4 {
+      font-family: 'Anton', sans-serif; font-size: 1rem;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--teal2); margin-bottom: 6px;
+      border-bottom: 2px solid var(--dark); padding-bottom: 6px;
+    }
+    .food-card p { font-size: 0.82rem; color: var(--grey); line-height: 1.6; }
+
+    /* ─── SPONSORS ─────────────────────────────── */
+    #sponsors { background: var(--dark); }
+
+    .sponsors-tier { margin-bottom: 44px; }
+    .sponsors-tier-label {
+      font-family: 'Anton', sans-serif;
+      font-size: 0.8rem; letter-spacing: 4px;
+      color: rgba(255,255,255,0.35); text-align: center;
+      margin-bottom: 20px; text-transform: uppercase;
+    }
+    .sponsors-row {
+      display: flex; flex-wrap: wrap; gap: 18px; justify-content: center;
+    }
+    .sponsor-badge {
+      background: var(--yellow);
+      border: 3px solid var(--yellow);
+      padding: 18px 36px; text-align: center;
+      font-family: 'Anton', sans-serif;
+      font-size: 1.1rem; letter-spacing: 2px;
+      color: var(--dark); text-transform: uppercase;
+      box-shadow: 4px 4px 0 rgba(255,255,255,0.15);
+      transition: transform .15s;
+    }
+    .sponsor-badge:hover { transform: translateY(-3px); }
+    .sponsor-badge.silver {
+      background: transparent; color: rgba(255,255,255,0.6);
+      border-color: rgba(255,255,255,0.2); font-size: 0.95rem;
+      box-shadow: none;
+    }
+
+    /* ─── INFOS PRATIQUES ──────────────────────── */
+    #infos { background: var(--yellow); }
+
+    .infos-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px; max-width: 1100px; margin: 0 auto;
+    }
+    .info-card {
+      background: var(--white);
+      border: 3px solid var(--dark);
+      padding: 26px 22px;
+      box-shadow: 4px 4px 0 var(--dark);
+    }
+    .info-card h4 {
+      font-family: 'Anton', sans-serif;
+      font-size: 1rem; letter-spacing: 2px;
+      color: var(--teal2); text-transform: uppercase;
+      border-bottom: 2px solid var(--dark); padding-bottom: 8px; margin-bottom: 12px;
+    }
+    .info-card p, .info-card li {
+      font-size: 0.88rem; color: #444; line-height: 1.8;
+    }
+    .info-card ul { padding-left: 16px; }
+
+    /* ─── BILLETTERIE CTA ──────────────────────── */
+    #billetterie { background: var(--yellow); text-align: center; }
+
+    /* Horizontal lines above/below title like img 11 */
+    .billetterie-title-wrap {
+      margin-bottom: 44px;
+    }
+    .billetterie-line {
+      height: 3px; background: var(--dark);
+      max-width: 600px; margin: 12px auto;
+    }
+    .billetterie-title {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--dark);
+    }
+    .billetterie-sub {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.4rem; letter-spacing: 3px;
+      color: var(--teal2); margin-bottom: 36px;
+    }
+
+    /* Price cards matching img 12 exactly */
+    .price-grid {
+      display: flex; gap: 28px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 44px;
+    }
+    .price-card {
+      background: var(--white);
+      border: 3px solid var(--dark);
+      padding: 28px 36px; min-width: 200px;
+      box-shadow: 5px 5px 0 var(--dark);
+    }
+    .price-card-title {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.15rem; letter-spacing: 2px;
+      color: var(--pink); text-transform: uppercase;
+      border-bottom: 2px solid var(--dark); padding-bottom: 8px; margin-bottom: 14px;
+      display: flex; align-items: center; gap: 8px; justify-content: center;
+    }
+    .price-row { margin-bottom: 10px; text-align: center; }
+    .price-label {
+      font-size: 0.72rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 2px; color: var(--grey);
+    }
+    .price-amount {
+      font-family: 'Anton', sans-serif;
+      font-size: 2rem; color: var(--dark); letter-spacing: 1px;
+    }
+    .price-divider { height: 2px; background: rgba(0,0,0,0.08); margin: 8px 0; }
+    .price-card .tulip { font-size: 1rem; }
+
+    .btn-helloasso {
+      display: inline-block;
+      background: var(--teal); color: var(--white);
+      font-family: 'Anton', sans-serif;
+      font-size: 1.15rem; letter-spacing: 3px;
+      text-decoration: none; padding: 18px 52px;
+      border: 3px solid var(--dark);
+      box-shadow: 5px 5px 0 var(--dark);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn-helloasso:hover {
+      transform: translate(-2px,-2px);
+      box-shadow: 7px 7px 0 var(--dark);
+    }
+    .qr-hint {
+      margin-top: 18px; font-size: 0.78rem; font-weight: 700;
+      color: var(--grey); letter-spacing: 2px; text-transform: uppercase;
+    }
+
+    /* ─── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--dark); text-align: center;
+      padding: 48px 52px;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.82rem;
+    }
+    .footer-logo-wrap { font-size: 2rem; margin-bottom: 12px; display: inline-block; }
+    .footer-links {
+      display: flex; gap: 28px; justify-content: center;
+      margin: 16px 0; flex-wrap: wrap;
+    }
+    footer a { color: var(--yellow); text-decoration: none; font-weight: 700; }
+    footer a:hover { color: var(--teal); }
+
+    /* ─── BURGER MENU ─── */
+    .burger {
+      display: none;
+      flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 4px;
+      background: none; border: none;
+    }
+    .burger span {
+      display: block; width: 26px; height: 3px;
+      background: var(--white); border-radius: 2px;
+      transition: all .3s;
+    }
+    .burger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .burger.open span:nth-child(2) { opacity: 0; }
+    .burger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed; top: 60px; left: 0; right: 0;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(12px);
+      z-index: 99; padding: 16px 0;
+      border-bottom: 3px solid var(--teal);
+      flex-direction: column;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      text-decoration: none; color: var(--white);
+      font-weight: 800; font-size: 1rem;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 14px 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: color .2s, background .2s;
+    }
+    .mobile-menu a:hover { color: var(--yellow); background: rgba(255,255,255,0.04); }
+    .mobile-menu .btn-ticket {
+      background: var(--pink); color: var(--white) !important;
+      margin: 12px 20px 4px; border-radius: 4px;
+      text-align: center; border-bottom: none;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      /* NAV */
+      nav { padding: 12px 20px; }
+      .nav-links { display: none; }
+      .burger { display: flex; }
+
+      /* SECTIONS */
+      section { padding: 56px 16px; }
+
+      /* HERO */
+      #hero {
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 16px 40px;
+        min-height: 100svh;
+      }
+      .hero-card {
+        max-width: 100%;
+        padding: 28px 24px;
+        width: 100%;
+      }
+      .hero-title { font-size: clamp(2.8rem, 12vw, 4rem); }
+      .hero-dates { font-size: clamp(1.2rem, 6vw, 1.6rem); }
+
+      /* PROGRAMME */
+      .prog-grid { grid-template-columns: 1fr; gap: 20px; }
+      .prog-slot { padding: 11px 14px; }
+      .prog-artist { font-size: 0.88rem; }
+      .prog-time { font-size: 0.82rem; }
+
+      /* ARTISTES */
+      .artists-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .next-banner { padding: 16px 18px; }
+      .nab-title { font-size: 1rem; letter-spacing: 1px; }
+      .nab-num { font-size: 1.5rem; }
+      .nab-block { padding: 8px 10px; min-width: 48px; }
+
+      /* LOCALISATION */
+      .loc-wrapper { grid-template-columns: 1fr; gap: 28px; }
+      .loc-map { height: 240px; }
+      .loc-info-block h3 { font-size: 1.4rem; }
+
+      /* NOURRITURE */
+      .food-grid { grid-template-columns: repeat(2, 1fr); }
+
+      /* SPONSORS */
+      .sponsors-row { gap: 12px; }
+      .sponsor-badge { padding: 14px 22px; font-size: 0.95rem; }
+
+      /* INFOS */
+      .infos-grid { grid-template-columns: 1fr; }
+
+      /* BILLETTERIE */
+      .price-grid { flex-direction: column; align-items: center; gap: 16px; }
+      .price-card { width: 100%; max-width: 320px; padding: 22px 24px; }
+      .btn-helloasso { font-size: 0.88rem; padding: 15px 24px; letter-spacing: 1px; }
+
+      /* FOOTER */
+      footer { padding: 36px 16px; }
+      .footer-links { gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .artists-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .artist-card { padding: 6px 6px 14px; }
+      .artist-name { font-size: 0.85rem; }
+      .food-grid { grid-template-columns: 1fr; }
+      .nab-title { font-size: 0.85rem; }
+      .mystery-countdown { gap: 4px; }
+      .cd-block { min-width: 30px; padding: 3px 5px; }
+      .cd-num { font-size: 0.85rem; }
+    }

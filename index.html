@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Petit Champ' — Festival 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ════════════════════════════════════════════ -->
+<nav>
+  <a class="nav-logo-wrap" href="#hero">
+    <img src="Logo Petit Champ/LogoPetitChamp.png" alt="Le Petit Champ' Logo" style="height: 32px; vertical-align: middle;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#programme">Programmation</a></li>
+    <li><a href="#artistes">Artistes</a></li>
+    <li><a href="#localisation">Lieu</a></li>
+    <li><a href="#infos">Infos pratiques</a></li>
+    <li><a href="#sponsors">Sponsors</a></li>
+    <li><a href="#billetterie" class="btn-ticket">Accès billetterie</a></li>
+  </ul>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Menu mobile -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#programme" class="mobile-link">Programmation</a>
+  <a href="#artistes" class="mobile-link">Artistes</a>
+  <a href="#localisation" class="mobile-link">Lieu</a>
+  <a href="#infos" class="mobile-link">Infos pratiques</a>
+  <a href="#sponsors" class="mobile-link">Sponsors</a>
+  <a href="#billetterie" class="btn-ticket mobile-link">Accès billetterie</a>
+</div>
+
+<!-- ═══ HERO ════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-deco-left"></div>
+  <div class="hero-card">
+    <div class="hero-edition-tag">6ÈME ÉDITION</div>
+    <h1 class="hero-title">
+      LE PETIT<br>
+      <span class="line2">CHAMP'</span>
+    </h1>
+    <div class="hero-dates">10 – 11 JUILLET 2026</div>
+    <p class="hero-desc">
+      Le festival ouvre ses portes pour sa 6ème édition !
+      Venez retrouver vos artistes favoris lors d'un événement chaleureux et convivial.
+    </p>
+    <a href="#billetterie" class="btn-hero">PRENDRE MES BILLETS</a>
+  </div>
+</section>
+
+<!-- ═══ PROGRAMME ═══════════════════════════════════════ -->
+<section id="programme">
+  <div class="section-title-wrap">
+    <div class="tulip-deco">
+      <span class="tulip">🌷</span>
+      <h2 class="section-title on-dark">Programmation</h2>
+      <span class="tulip">🌷</span>
+    </div>
+  </div>
+  <div class="prog-grid">
+
+    <!-- VENDREDI -->
+    <div class="prog-day">
+      <div class="prog-day-header">VENDREDI 10 JUILLET</div>
+
+      <!-- JAGO — révélé le 2 mai -->
+      <div class="prog-slot mystery-slot" data-reveal="2026-05-02T00:00:00" data-name="JAGO" data-genre="Indie POP" data-time="20H30 / 21H30">
+        <div>
+          <div class="prog-artist">🔒 ???</div>
+          <div class="prog-genre">À RÉVÉLER — 2 MAI</div>
+          <div class="prog-mini-cd"></div>
+        </div>
+        <div class="prog-time">20H30 / 21H30</div>
+      </div>
+
+      <!-- NO SEX LAST NIGHT — publié -->
+      <div class="prog-slot">
+        <div>
+          <div class="prog-artist">NO SEX LAST NIGHT</div>
+          <div class="prog-genre">Cold wave + EBM</div>
+        </div>
+        <div class="prog-time">22H15 / 23H15</div>
+      </div>
+
+      <!-- FLYING BONES — révélé le 23 mai -->
+      <div class="prog-slot mystery-slot" data-reveal="2026-05-23T00:00:00" data-name="FLYING BONES" data-genre="Rock Garage" data-time="00H00 / 01H00">
+        <div>
+          <div class="prog-artist">🔒 ???</div>
+          <div class="prog-genre">À RÉVÉLER — 23 MAI</div>
+          <div class="prog-mini-cd"></div>
+        </div>
+        <div class="prog-time">00H00 / 01H00</div>
+      </div>
+
+      <!-- ËLLAA — révélé le 16 mai -->
+      <div class="prog-slot mystery-slot" data-reveal="2026-05-16T00:00:00" data-name="ËLLAA" data-genre="DJ Set" data-time="1H30 / 3H00">
+        <div>
+          <div class="prog-artist">🔒 ???</div>
+          <div class="prog-genre">À RÉVÉLER — 16 MAI</div>
+          <div class="prog-mini-cd"></div>
+        </div>
+        <div class="prog-time">1H30 / 3H00</div>
+      </div>
+    </div>
+
+    <!-- SAMEDI -->
+    <div class="prog-day">
+      <div class="prog-day-header">SAMEDI 11 JUILLET</div>
+
+      <!-- COLLECTIF TEAM PEACE — publié -->
+      <div class="prog-slot">
+        <div>
+          <div class="prog-artist">COLLECTIF TEAM PEACE</div>
+          <div class="prog-genre">Reggae</div>
+        </div>
+        <div class="prog-time">20H30 / 21H30</div>
+      </div>
+
+      <!-- BPM BROS — révélé le 9 mai -->
+      <div class="prog-slot mystery-slot" data-reveal="2026-05-09T00:00:00" data-name="BPM BROS" data-genre="Funk Rock" data-time="22H15 / 23H15">
+        <div>
+          <div class="prog-artist">🔒 ???</div>
+          <div class="prog-genre">À RÉVÉLER — 9 MAI</div>
+          <div class="prog-mini-cd"></div>
+        </div>
+        <div class="prog-time">22H15 / 23H15</div>
+      </div>
+
+      <!-- MICHEL HUBERT — publié -->
+      <div class="prog-slot">
+        <div>
+          <div class="prog-artist">MICHEL HUBERT</div>
+          <div class="prog-genre">INDESCRIPTIBLE</div>
+        </div>
+        <div class="prog-time">00H00 / 01H15</div>
+      </div>
+
+      <!-- OGUSTINE — révélé le 30 mai -->
+      <div class="prog-slot mystery-slot" data-reveal="2026-05-30T00:00:00" data-name="OGUSTINE" data-genre="DJ Set" data-time="2H00 / 3H00">
+        <div>
+          <div class="prog-artist">🔒 ???</div>
+          <div class="prog-genre">À RÉVÉLER — 30 MAI</div>
+          <div class="prog-mini-cd"></div>
+        </div>
+        <div class="prog-time">2H00 / 3H00</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ ARTISTES ════════════════════════════════════════ -->
+<section id="artistes">
+  <div class="section-title-wrap">
+    <div class="tulip-deco">
+      <span class="tulip">🌷</span>
+      <h2 class="section-title">Les Artistes</h2>
+      <span class="tulip">🌷</span>
+    </div>
+  </div>
+
+  <!-- Bandeau prochaine annonce -->
+  <div class="next-banner" id="next-banner">
+    <div class="nab-eyebrow">✦ Prochaine annonce ✦</div>
+    <div class="nab-title" id="nab-title">ARTISTE MYSTÈRE</div>
+    <div class="nab-cd">
+      <div class="nab-block"><span class="nab-num" id="nab-d">--</span><span class="nab-lbl">Jours</span></div>
+      <div class="nab-block"><span class="nab-num" id="nab-h">--</span><span class="nab-lbl">Heures</span></div>
+      <div class="nab-block"><span class="nab-num" id="nab-m">--</span><span class="nab-lbl">Min</span></div>
+      <div class="nab-block"><span class="nab-num" id="nab-s">--</span><span class="nab-lbl">Sec</span></div>
+    </div>
+  </div>
+
+  <div class="artists-grid">
+
+    <!-- ✅ PUBLIÉS -->
+    <div class="artist-card">
+      <div class="artist-img"><img src="Photo Artiste/CollectifTeamPeace.jpg" alt="Collectif Team Peace"></div>
+      <div class="artist-name">COLLECTIF TEAM PEACE</div>
+      <div class="artist-genre">Reggae</div>
+      <span class="artist-day sat">Samedi 11 Juillet</span>
+    </div>
+
+    <div class="artist-card">
+      <div class="artist-img"><img src="Photo Artiste/NoSexLastNight.jpg" alt="No Sex Last Night"></div>
+      <div class="artist-name">NO SEX LAST NIGHT</div>
+      <div class="artist-genre">Cold Wave + EBM</div>
+      <span class="artist-day">Vendredi 10 Juillet</span>
+    </div>
+
+    <div class="artist-card">
+      <div class="artist-img"><img src="Photo Artiste/MichelHubert.jpg" alt="Michel Hubert"></div>
+      <div class="artist-name">MICHEL HUBERT</div>
+      <div class="artist-genre">INDESCRIPTIBLE</div>
+      <span class="artist-day sat">Samedi 11 Juillet</span>
+    </div>
+
+    <!-- 🔒 2 MAI — JAGO -->
+    <div class="artist-card mystery"
+         data-reveal="2026-05-02T00:00:00"
+         data-name="JAGO" data-genre="Indie POP"
+         data-img="Photo Artiste/Jago.jpg"
+         data-day="Vendredi 10 Juillet" data-sat="">
+      <div class="mystery-img">
+        <span class="mystery-lock">🔒</span>
+        <span class="mystery-date-label">Annonce le</span>
+        <span class="mystery-reveal-date">2 MAI</span>
+      </div>
+      <div class="artist-name">???</div>
+      <div class="artist-genre" style="color:var(--teal)">À RÉVÉLER</div>
+      <div class="mystery-countdown"></div>
+    </div>
+
+    <!-- 🔒 9 MAI — BPM BROS -->
+    <div class="artist-card mystery"
+         data-reveal="2026-05-09T00:00:00"
+         data-name="BPM BROS" data-genre="Funk Rock"
+         data-img="Photo Artiste/BPMBRO.jpg"
+         data-day="Samedi 11 Juillet" data-sat="sat">
+      <div class="mystery-img">
+        <span class="mystery-lock">🔒</span>
+        <span class="mystery-date-label">Annonce le</span>
+        <span class="mystery-reveal-date">9 MAI</span>
+      </div>
+      <div class="artist-name">???</div>
+      <div class="artist-genre" style="color:var(--teal)">À RÉVÉLER</div>
+      <div class="mystery-countdown"></div>
+    </div>
+
+    <!-- 🔒 16 MAI — ËLLAA -->
+    <div class="artist-card mystery"
+         data-reveal="2026-05-16T00:00:00"
+         data-name="ËLLAA" data-genre="DJ SET"
+         data-img="Photo Artiste/ËLLAA.jpg"
+         data-day="Vendredi 10 Juillet" data-sat="">
+      <div class="mystery-img">
+        <span class="mystery-lock">🔒</span>
+        <span class="mystery-date-label">Annonce le</span>
+        <span class="mystery-reveal-date">16 MAI</span>
+      </div>
+      <div class="artist-name">???</div>
+      <div class="artist-genre" style="color:var(--teal)">À RÉVÉLER</div>
+      <div class="mystery-countdown"></div>
+    </div>
+
+    <!-- 🔒 23 MAI — FLYING BONES -->
+    <div class="artist-card mystery"
+         data-reveal="2026-05-23T00:00:00"
+         data-name="FLYING BONES" data-genre="Rock Garage"
+         data-img="Photo Artiste/FlyingBones.jpg"
+         data-day="Vendredi 10 Juillet" data-sat="">
+      <div class="mystery-img">
+        <span class="mystery-lock">🔒</span>
+        <span class="mystery-date-label">Annonce le</span>
+        <span class="mystery-reveal-date">23 MAI</span>
+      </div>
+      <div class="artist-name">???</div>
+      <div class="artist-genre" style="color:var(--teal)">À RÉVÉLER</div>
+      <div class="mystery-countdown"></div>
+    </div>
+
+    <!-- 🔒 30 MAI — OGUSTINE -->
+    <div class="artist-card mystery"
+         data-reveal="2026-05-30T00:00:00"
+         data-name="OGUSTINE" data-genre="DJ Set"
+         data-img="Photo Artiste/ArtistE.jpg"
+         data-day="Samedi 11 Juillet" data-sat="sat">
+      <div class="mystery-img">
+        <span class="mystery-lock">🔒</span>
+        <span class="mystery-date-label">Annonce le</span>
+        <span class="mystery-reveal-date">30 MAI</span>
+      </div>
+      <div class="artist-name">???</div>
+      <div class="artist-genre" style="color:var(--teal)">À RÉVÉLER</div>
+      <div class="mystery-countdown"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ LOCALISATION ════════════════════════════════════ -->
+<section id="localisation">
+  <div class="section-title-wrap">
+    <div class="tulip-deco">
+      <span class="tulip">🌷</span>
+      <h2 class="section-title on-teal">Localisation</h2>
+      <span class="tulip">🌷</span>
+    </div>
+  </div>
+  <div class="loc-wrapper">
+    <div class="loc-map">
+      <!-- Remplacer par les vraies coordonnées GPS -->
+<iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.957670%2C47.973306%2C-0.941670%2C47.989306&layer=mapnik&marker=47.9813059%2C-0.94967"
+        allowfullscreen loading="lazy" title="Localisation Le Petit Champ'">
+      </iframe>
+    </div>
+    <div class="loc-info-block">
+      <h3>Comment nous rejoindre ?</h3>
+      <div class="loc-row">
+        <span class="loc-badge">ADRESSE</span>
+        <p>Le Petit Champagné<br>Beaulieu-Sur-Oudon (53)</p>
+      </div>
+      <div class="loc-row">
+        <span class="loc-badge">VOITURE</span>
+        <p>Parking gratuit sur place. Covoiturage encouragé.</p>
+      </div>
+      <div class="loc-row">
+        <span class="loc-badge">TRAIN</span>
+        <p>Gare la plus proche à 25 km (Laval).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NOURRITURE ══════════════════════════════════════ -->
+<section id="nourriture">
+  <div class="section-title-wrap">
+    <div class="tulip-deco">
+      <span class="tulip">🌷</span>
+      <h2 class="section-title">Food Truck Restauration</h2>
+      <span class="tulip">🌷</span>
+    </div>
+  </div>
+  <div class="food-grid">
+    <div class="food-card">
+      <span class="food-emoji">🍔</span>
+      <h4>LES PAUPIETTES</h4>
+      <p>Burgers maison, options végétariennes.</p>
+    </div>
+    <div class="food-card">
+      <span class="food-emoji">🥞</span>
+      <h4>Planch à Galette </h4>
+      <p>Crêpes et galettes maison.</p>
+    </div>
+    <div class="food-card">
+      <span class="food-emoji">🌯</span>
+      <h4>RAINBOWL</h4>
+      <p>Wrap et frites maison.</p>
+    </div>
+    <div class="food-card">
+      <span class="food-emoji">🌶️</span>
+      <h4>Regal plancha</h4>
+      <p>Rougail saucisse maison.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INFOS PRATIQUES ══════════════════════════════════ -->
+<section id="infos">
+  <div class="section-title-wrap">
+    <div class="tulip-deco">
+      <span class="tulip">🌷</span>
+      <h2 class="section-title">Infos Pratiques</h2>
+      <span class="tulip">🌷</span>
+    </div>
+  </div>
+  <div class="infos-grid">
+    <div class="info-card">
+      <h4>🕐 Horaires & Accès</h4>
+      <p>Ouverture des portes à 19h30.<br>
+      Dernier concert vers 3h du matin.<br>
+      Accès uniquement avec billet valide (possibilité d'acheter sur place).</p>
+    </div>
+    <div class="info-card">
+      <h4>✅ Ce qu'on peut apporter</h4>
+      <ul>
+        <li>Bouteille d'eau vide (remplissage gratuit)</li>
+        <li>Veste (soirées fraîches)</li>
+        <li>Bonne humeur !</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h4>🚫 Interdit sur site</h4>
+      <ul>
+        <li>Bouteilles en verre</li>
+        <li>Animaux (sauf chiens guides)</li>
+        <li>Alcool extérieur</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h4>♿ Accessibilité</h4>
+      <p>Site accessible PMR(nous prévenir par email). Contactez-nous pour tout besoin spécifique.</p>
+    </div>
+    <div class="info-card">
+      <h4>📩 Contact</h4>
+      <p>Email : lesquatdesvieux@gmail.com<br>
+        <a href="https://instagram.com/lepetitchamp_festival" target="_blank" rel="noopener"
+           style="color:var(--teal2);font-weight:700;">Instagram</a>
+      </p>
+    </div>
+    <div class="info-card">
+      <h4>🗺️ Plan du site</h4>
+      <p>Une scène principale, espace food trucks, bar central, zone détente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BILLETTERIE ══════════════════════════════════════ -->
+<section id="billetterie" style="background:var(--yellow);text-align:center;">
+  <div class="billetterie-title-wrap">
+    <div class="billetterie-line"></div>
+    <p class="billetterie-title">VOTRE FESTIVAL<br>OUVRE SA</p>
+    <p class="billetterie-title" style="color:var(--teal2)">BILLETTERIE</p>
+    <div class="billetterie-line"></div>
+  </div>
+
+  <p class="billetterie-sub">10 – 11 JUILLET 2026</p>
+
+  <div class="price-grid">
+    <div class="price-card">
+      <div class="price-card-title">
+        <span class="tulip">🌷</span> PASS SOIRÉE <span class="tulip">🌷</span>
+      </div>
+      <div class="price-row">
+        <div class="price-label">Préventes</div>
+        <div class="price-amount">15€</div>
+      </div>
+      <div class="price-divider"></div>
+      <div class="price-row">
+        <div class="price-label">Classique</div>
+        <div class="price-amount">18€</div>
+      </div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-card-title">
+        <span class="tulip">🌷</span> PASS WEEK-END <span class="tulip">🌷</span>
+      </div>
+      <div class="price-row">
+        <div class="price-label">Préventes</div>
+        <div class="price-amount">26€</div>
+      </div>
+      <div class="price-divider"></div>
+      <div class="price-row">
+        <div class="price-label">Classique</div>
+        <div class="price-amount">30€</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remplacer href par le vrai lien HelloAsso -->
+  <a href="https://www.helloasso.com/associations/le-squat-des-vieux/evenements/le-petit-champ-2026-1" target="_blank" rel="noopener" class="btn-helloasso">
+    ACHETER MES BILLETS — HELLOASSO
+  </a>
+  <p class="qr-hint">Scannez le QR code sur l'affiche · Gratuit – 12 ans</p>
+</section>
+
+<!-- ═══ SPONSORS ════════════════════════════════════════ -->
+<section id="sponsors">
+  <div class="section-title-wrap">
+    <div class="tulip-deco">
+      <span class="tulip" style="color:var(--yellow)">🌷</span>
+      <h2 class="section-title on-dark">Nos Sponsors</h2>
+      <span class="tulip" style="color:var(--yellow)">🌷</span>
+    </div>
+  </div>
+  <div class="sponsors-tier">
+    <p class="sponsors-tier-label">— Partenaires OR —</p>
+    <div class="sponsors-row">
+      <div class="artist-card">
+        <div class="artist-img"><img src="Logos Sponsors/BeaulieuSurOudon.png" alt="Mairie Beaulieu-sur-Oudon"></div>
+        <div class="artist-name">Mairie Beaulieu-sur-Oudon</div>
+      </div>
+      <div class="artist-card">
+        <div class="artist-img"><img src="Logos Sponsors/CreditMutuel.png" alt="Credit Mutuel"></div>
+        <div class="artist-name">Credit Mutuel</div>
+      </div>
+      <div class="artist-card">
+        <div class="artist-img"><img src="Logos Sponsors/CreditAgricole.png" alt="Credit Agricole"></div>
+        <div class="artist-name">Credit Agricole</div>
+      </div>
+      <div class="artist-card">
+        <div class="artist-img"><img src="Logos Sponsors/UsiOuest.png" alt="Usi Ouest"></div>
+        <div class="artist-name">Usi Ouest</div>
+      </div>
+      <div class="artist-card">
+        <div class="artist-img"><img src="Logos Sponsors/LeMillézime.png" alt="Le Millezime"></div>
+        <div class="artist-name">Le Millezime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo-wrap">
+    <img src="Logo Petit Champ/LogoPetitChamp.png" alt="Le Petit Champ' Logo" style="height: 32px; vertical-align: middle;">
+  </div>
+  <p>Festival 2026 · 6ème Édition · 10 &amp; 11 Juillet</p>
+  <div class="footer-links">
+    <a href="https://instagram.com/lepetitchamp_festival" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:lesquatdesvieux@gmail.com">Contact</a>
+    <a href="#localisation">Localisation</a>
+    <!-- <a href="#">Mentions légales</a> -->
+  </div>
+  <p style="margin-top:8px;opacity:.3;font-size:0.72rem">© 2026 Le Petit Champ' — Tous droits réservés</p>
+</footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
